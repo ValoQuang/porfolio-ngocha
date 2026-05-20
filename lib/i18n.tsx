@@ -302,7 +302,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     document.documentElement.setAttribute("lang", l);
   }, []);
 
-  const value = useMemo<Ctx>(() => ({ lang, setLang, t: translations[lang] }), [lang, setLang]);
+  const value = useMemo<Ctx>(() => ({ lang, setLang, t: translations[lang] as Dict }), [lang, setLang]);
 
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }
