@@ -25,7 +25,7 @@ export function Hero() {
       />
 
       <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 md:grid-cols-12">
-        <div className="md:col-span-7 md:pr-4">
+        <div className="md:col-span-6 md:pr-4">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -60,8 +60,25 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-10 flex items-center gap-5"
+            transition={{ duration: 1, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-10 max-w-xl border-l-2 border-rose/40 pl-4"
+          >
+            <p className="tracked mb-1 font-mono text-[10px] text-rose-deep">
+              {t.hero.education.label}
+            </p>
+            <p className="font-display text-lg leading-snug text-ink">
+              {t.hero.education.school}
+            </p>
+            <p className="mt-1 text-sm text-ink-soft">
+              {t.hero.education.major} · <span className="font-mono text-[12px] text-rose-deep">{t.hero.education.grade}</span>
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-8 flex items-center gap-5"
           >
             <a
               href="#about"
@@ -78,9 +95,9 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-          className="md:col-span-5 md:justify-self-end"
+          className="md:col-span-6 md:justify-self-end"
         >
-          <div className="relative mx-auto w-full max-w-[560px]">
+          <div className="relative mx-auto w-full max-w-[680px]">
             <div className="portrait-ring drift">
               <div className="overflow-hidden rounded-full border border-hairline bg-surface">
                 <Image

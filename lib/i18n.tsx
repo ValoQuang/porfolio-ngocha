@@ -19,6 +19,12 @@ export const translations = {
       title2: "Ngoc Ha",
       tagline:
         "Sales manager turned product analyst — a bridge between clients and engineering at one of Vietnam's largest software corporations.",
+      education: {
+        label: "Education",
+        school: "University of Banking, Ho Chi Minh City",
+        major: "Business Administration",
+        grade: "GPA 4.5 / 5",
+      },
       cta: "Read my story",
       meta: "Based in Ho Chi Minh City · Vietnam",
     },
@@ -152,6 +158,12 @@ export const translations = {
       title2: "Ngọc Hà",
       tagline:
         "Từ trưởng nhóm sales bước sang vai trò Product Analyst — cầu nối giữa khách hàng và đội kỹ thuật tại một trong những tập đoàn phần mềm lớn nhất Việt Nam.",
+      education: {
+        label: "Học vấn",
+        school: "Đại học Ngân hàng TP. Hồ Chí Minh",
+        major: "Quản trị Kinh doanh",
+        grade: "GPA 4.5 / 5",
+      },
       cta: "Đọc câu chuyện của tôi",
       meta: "Sống tại TP. Hồ Chí Minh · Việt Nam",
     },
