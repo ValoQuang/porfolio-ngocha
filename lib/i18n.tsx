@@ -158,7 +158,7 @@ export const translations = {
     about: {
       kicker: "Xin chào",
       title: "Nhạy bén với kinh doanh,<br/>khát khao học nghề mới.",
-      body: "Tôi bắt đầu từ bán hàng — tiệc cưới, rồi logistics, rồi SaaS doanh nghiệp. Càng làm tôi càng nhận ra: một deal đẹp luôn được cứu bởi người vừa hiểu sản phẩm vừa hiểu khách hàng. Vì vậy năm 2025 tôi rẽ khỏi sales thuần để bước vào phân tích sản phẩm. Hôm nay tôi dịch những cuộc nói chuyện với khách hàng thành đặc tả, timeline và bản phát hành.",
+      body: "Tôi bắt đầu từ bán hàng — tiệc cưới, rồi logistics, rồi SaaS doanh nghiệp. Càng làm tôi càng nhận ra: một deal đẹp luôn được cứu bởi người vừa hiểu sản phẩm vừa hiểu khách hàng. Vì vậy năm 2025 tôi rẽ khỏi sales thuần để bước vào phân tích sản phẩm. Hôm nay tôi dịch những cuộc nói chuyện với khách hàng và bộ phận IT, bàn luận về timeline và bản phát hành.",
       stats: [
         { label: "Năm làm doanh thu", value: "7+" },
         { label: "Quy mô đội dẫn dắt", value: "7" },
@@ -179,7 +179,7 @@ export const translations = {
             "Bước khỏi vùng an toàn của sales để sang đội IT. Tôi phân tích tính năng, lập timeline và đồng hành đến khi sản phẩm đến tay khách hàng.",
           bullets: [
             "Cầu nối giữa các cuộc trao đổi sales và backlog kỹ thuật.",
-            "Đặc tả luồng web và các điểm tích hợp API.",
+            "Phân tích luồng web và các điểm tích hợp API.",
             "Chịu trách nhiệm phân tích tính năng, timeline và đảm bảo triển khai.",
           ],
           highlight: "Product Analyst đầu tiên của pod nền tảng CRM.",

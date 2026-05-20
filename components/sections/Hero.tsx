@@ -25,7 +25,7 @@ export function Hero() {
       />
 
       <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 md:grid-cols-12">
-        <div className="md:col-span-7">
+        <div className="md:col-span-7 md:pr-4">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -80,15 +80,15 @@ export function Hero() {
           transition={{ duration: 1.2, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
           className="md:col-span-5 md:justify-self-end"
         >
-          <div className="relative mx-auto w-[78%] max-w-[360px]">
+          <div className="relative mx-auto w-full max-w-[560px]">
             <div className="portrait-ring drift">
               <div className="overflow-hidden rounded-full border border-hairline bg-surface">
                 <Image
                   src="/images/ngocha-portrait.png"
                   alt="Le Thi Ngoc Ha"
-                  width={400}
-                  height={400}
-                  className="aspect-square w-full object-cover"
+                  width={1200}
+                  height={1200}
+                  className="aspect-square w-full scale-125 object-contain"
                   priority
                 />
               </div>
