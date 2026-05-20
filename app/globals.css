@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="light"] {
+  --bg: #F7F2EA;
+  --surface: #FFFFFF;
+  --surface-2: #EFE9DE;
+  --ink: #2A2620;
+  --ink-soft: #4A4339;
+  --muted: #8A8275;
+  --hairline: #E0D8C8;
+  --rose: #C99B8B;
+  --rose-deep: #A8755F;
+  --sage: #A8B5A0;
+  --sage-deep: #708570;
+  --cream: #EBE2D2;
+  --shadow: 0 30px 60px -30px rgba(120, 95, 70, 0.25);
+}
+
+[data-theme="dark"] {
+  --bg: #1A1714;
+  --surface: #24201B;
+  --surface-2: #2F2A24;
+  --ink: #EFE7D7;
+  --ink-soft: #D5CCB9;
+  --muted: #9A9082;
+  --hairline: #3A332B;
+  --rose: #D9A99A;
+  --rose-deep: #B7846F;
+  --sage: #A9B6A0;
+  --sage-deep: #8AA08A;
+  --cream: #2A251F;
+  --shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.55);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-muted: var(--muted);
+  --color-hairline: var(--hairline);
+  --color-rose: var(--rose);
+  --color-rose-deep: var(--rose-deep);
+  --color-sage: var(--sage);
+  --color-sage-deep: var(--sage-deep);
+  --color-cream: var(--cream);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-cormorant);
+  --font-mono: var(--font-jetbrains);
+}
+
+html {
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 600ms ease, color 600ms ease;
+}
+
+::selection {
+  background: var(--rose);
+  color: var(--surface);
+}
+
+.tracked {
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+}
+
+.hairline {
+  background-image: linear-gradient(90deg, transparent, var(--hairline) 20%, var(--hairline) 80%, transparent);
+  height: 1px;
+}
+
+/* paper grain — very soft, scandinavian texture */
+.paper-grain {
+  position: relative;
+}
+.paper-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(1px 1px at 17% 24%, rgba(168, 117, 95, 0.04) 50%, transparent 51%),
+    radial-gradient(1px 1px at 63% 71%, rgba(168, 117, 95, 0.03) 50%, transparent 51%),
+    radial-gradient(1px 1px at 41% 89%, rgba(168, 117, 95, 0.03) 50%, transparent 51%);
+  background-size: 320px 320px, 240px 240px, 180px 180px;
+  opacity: 0.7;
+}
+
+/* animated underline */
+.achievement-underline {
+  position: relative;
+  display: inline;
+  background-image: linear-gradient(var(--rose), var(--rose));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  padding-bottom: 2px;
+  transition: background-size 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.achievement-underline.in-view {
+  background-size: 100% 2px;
+}
+
+/* picture frame — empty mat with subtle shadow */
+.frame {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.frame::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px solid var(--hairline);
+  pointer-events: none;
+}
+.frame .mat {
+  position: absolute;
+  inset: 22px;
+  background: var(--surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame .mat-label {
+  font-family: var(--font-mono), monospace;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+@keyframes drift {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.drift { animation: drift 7s ease-in-out infinite; }
+
+@keyframes shimmer {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(120%); }
+}
+.shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.25) 50%, transparent 100%);
+  animation: shimmer 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.portrait-ring {
+  background: conic-gradient(from 210deg, var(--rose) 0deg, var(--sage) 120deg, var(--cream) 240deg, var(--rose) 360deg);
+  padding: 6px;
+  border-radius: 9999px;
+}
