@@ -136,15 +136,6 @@ export const translations = {
       referenceLabel: "Reference",
       cta: "Write to me",
     },
-    marquee: [
-      "Product Analysis",
-      "Sales Leadership",
-      "Customer Discovery",
-      "SaaS · CRM · HRM",
-      "Stakeholder Translation",
-      "Release Shepherding",
-      "Vietnam ↔ Global",
-    ],
     process: {
       kicker: "How I work",
       title: "From conversation<br/><em>to shipped release.</em>",
@@ -318,15 +309,6 @@ export const translations = {
       referenceLabel: "Người tham chiếu",
       cta: "Gửi tin nhắn",
     },
-    marquee: [
-      "Phân tích Sản phẩm",
-      "Lãnh đạo Sales",
-      "Khám phá Khách hàng",
-      "SaaS · CRM · HRM",
-      "Cầu nối Stakeholder",
-      "Đồng hành Release",
-      "Việt Nam ↔ Toàn cầu",
-    ],
     process: {
       kicker: "Cách tôi làm việc",
       title: "Từ cuộc trò chuyện<br/><em>đến bản phát hành.</em>",

@@ -1,6 +1,5 @@
 import { Nav } from "@/components/Nav";
 import { Utilities } from "@/components/Utilities";
-import { Marquee } from "@/components/Marquee";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Process } from "@/components/sections/Process";
@@ -17,7 +16,6 @@ export default function Page() {
       <Utilities />
       <main className="relative">
         <Hero />
-        <Marquee />
         <About />
         <Process />
         <Experience />
