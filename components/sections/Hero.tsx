@@ -97,17 +97,10 @@ export function Hero() {
           transition={{ duration: 1.2, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
           className="md:col-span-6 md:justify-self-end"
         >
-          <div className="relative mx-auto w-full max-w-[680px]">
+          <div className="relative mx-auto w-full max-w-[480px]">
             <div className="portrait-ring drift">
-              <div className="overflow-hidden rounded-full border border-hairline bg-surface">
-                <Image
-                  src="/images/ngocha-portrait.png"
-                  alt="Le Thi Ngoc Ha"
-                  width={1200}
-                  height={1200}
-                  className="aspect-square w-full scale-125 object-contain"
-                  priority
-                />
+              <div className="aspect-square overflow-hidden rounded-full border border-hairline bg-surface flex items-center justify-center">
+                <span className="font-mono text-[10px] tracked text-muted">portrait · soon</span>
               </div>
             </div>
             <div
