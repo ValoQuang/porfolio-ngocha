@@ -8,9 +8,11 @@ export const translations = {
   en: {
     nav: {
       about: "About",
+      process: "Process",
       experience: "Experience",
       bootcamp: "Bootcamp",
       skills: "Skills",
+      voices: "Voices",
       contact: "Contact",
     },
     hero: {
@@ -134,6 +136,47 @@ export const translations = {
       referenceLabel: "Reference",
       cta: "Write to me",
     },
+    marquee: [
+      "Product Analysis",
+      "Sales Leadership",
+      "Customer Discovery",
+      "SaaS · CRM · HRM",
+      "Stakeholder Translation",
+      "Release Shepherding",
+      "Vietnam ↔ Global",
+    ],
+    process: {
+      kicker: "How I work",
+      title: "From conversation<br/><em>to shipped release.</em>",
+      body: "Three habits I carry from sales into product analysis. They keep the loop short between what a customer says on a Tuesday and what engineering ships the next sprint.",
+      steps: [
+        {
+          number: "01",
+          title: "Listen",
+          body: "Sit on every discovery and demo call I can. Capture pain in the customer's own words, not the framework's.",
+        },
+        {
+          number: "02",
+          title: "Translate",
+          body: "Convert those notes into specs, flows and timelines engineering can act on without a second meeting.",
+        },
+        {
+          number: "03",
+          title: "Ship",
+          body: "Stay on the release until it lands. Loop the client's reaction back into the next sprint within the week.",
+        },
+      ],
+    },
+    voices: {
+      kicker: "Voices",
+      title: "What clients<br/>and teammates say.",
+      body: "Recommendation letters are en route from former Misa leads and Supership clients. Cards below are intentionally empty — they'll fill in as quotes come back signed.",
+      placeholders: [
+        { tag: "Misa · Sales Lead", note: "Quote pending — Q2 2026" },
+        { tag: "Supership · Client", note: "Quote pending — Q2 2026" },
+        { tag: "Misa · Engineering", note: "Quote pending — Q3 2026" },
+      ],
+    },
     utilities: {
       theme: "Theme",
       language: "Language",
@@ -147,9 +190,11 @@ export const translations = {
   vi: {
     nav: {
       about: "Giới thiệu",
+      process: "Quy trình",
       experience: "Kinh nghiệm",
       bootcamp: "Bootcamp",
       skills: "Kỹ năng",
+      voices: "Tiếng nói",
       contact: "Liên hệ",
     },
     hero: {
@@ -272,6 +317,47 @@ export const translations = {
       locationLabel: "Địa chỉ",
       referenceLabel: "Người tham chiếu",
       cta: "Gửi tin nhắn",
+    },
+    marquee: [
+      "Phân tích Sản phẩm",
+      "Lãnh đạo Sales",
+      "Khám phá Khách hàng",
+      "SaaS · CRM · HRM",
+      "Cầu nối Stakeholder",
+      "Đồng hành Release",
+      "Việt Nam ↔ Toàn cầu",
+    ],
+    process: {
+      kicker: "Cách tôi làm việc",
+      title: "Từ cuộc trò chuyện<br/><em>đến bản phát hành.</em>",
+      body: "Ba thói quen tôi mang từ sales sang phân tích sản phẩm. Chúng rút ngắn vòng lặp giữa điều khách nói hôm thứ Ba và bản release engineering bàn giao sprint kế.",
+      steps: [
+        {
+          number: "01",
+          title: "Lắng nghe",
+          body: "Ngồi cùng mọi cuộc discovery và demo có thể. Ghi lại nỗi đau bằng đúng lời khách, không phải bằng khung sườn lý thuyết.",
+        },
+        {
+          number: "02",
+          title: "Phiên dịch",
+          body: "Chuyển ghi chú thành spec, sơ đồ luồng và timeline để engineering có thể bắt tay làm mà không cần họp lại.",
+        },
+        {
+          number: "03",
+          title: "Bàn giao",
+          body: "Đồng hành đến khi bản release đến tay khách hàng. Đưa phản hồi của khách vào sprint kế ngay trong tuần.",
+        },
+      ],
+    },
+    voices: {
+      kicker: "Tiếng nói",
+      title: "Khách hàng<br/>và đồng đội nói gì.",
+      body: "Thư giới thiệu đang trên đường từ các lead cũ ở Misa và khách hàng Supership. Các thẻ bên dưới cố tình để trống — sẽ điền vào khi từng trích dẫn được gửi về có chữ ký.",
+      placeholders: [
+        { tag: "Misa · Sales Lead", note: "Trích dẫn — Q2/2026" },
+        { tag: "Supership · Khách hàng", note: "Trích dẫn — Q2/2026" },
+        { tag: "Misa · Kỹ thuật", note: "Trích dẫn — Q3/2026" },
+      ],
     },
     utilities: {
       theme: "Giao diện",

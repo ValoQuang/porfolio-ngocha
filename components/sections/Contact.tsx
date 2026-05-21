@@ -27,7 +27,7 @@ export function Contact() {
 
           <div className="md:col-span-9">
             <Reveal>
-              <h2 className="font-display text-[clamp(2rem,4.5vw,3.6rem)] leading-[1.05] text-ink">
+              <h2 className="font-display text-[clamp(2.4rem,5.5vw,4.5rem)] leading-[1.02] text-ink">
                 {t.contact.title}
               </h2>
               <p className="mt-6 max-w-xl text-ink-soft md:text-lg">{t.contact.body}</p>

@@ -7,9 +7,11 @@ export function Nav() {
   const { t } = useI18n();
   const items: Array<[string, string]> = [
     ["#about", t.nav.about],
+    ["#process", t.nav.process],
     ["#experience", t.nav.experience],
     ["#bootcamp", t.nav.bootcamp],
     ["#skills", t.nav.skills],
+    ["#voices", t.nav.voices],
     ["#contact", t.nav.contact],
   ];
 

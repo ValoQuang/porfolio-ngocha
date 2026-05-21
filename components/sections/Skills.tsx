@@ -15,7 +15,7 @@ export function Skills() {
             <p className="tracked font-mono text-[11px] text-rose-deep">— {t.skills.kicker}</p>
           </Reveal>
           <Reveal className="md:col-span-9">
-            <h2 className="font-display text-[clamp(2rem,4.5vw,3.4rem)] leading-[1.05] text-ink">
+            <h2 className="font-display text-[clamp(2.4rem,5.5vw,4.5rem)] leading-[1.02] text-ink">
               {t.skills.title}
             </h2>
           </Reveal>

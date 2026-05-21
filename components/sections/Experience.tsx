@@ -17,7 +17,7 @@ export function Experience() {
           </Reveal>
           <Reveal className="md:col-span-9">
             <h2
-              className="font-display text-[clamp(2rem,4.5vw,3.4rem)] leading-[1.05] text-ink [&_em]:not-italic [&_em]:font-light [&_em]:italic [&_em]:text-rose-deep"
+              className="font-display text-[clamp(2.4rem,5.5vw,4.5rem)] leading-[1.02] text-ink [&_em]:font-light [&_em]:italic [&_em]:text-rose-deep"
               dangerouslySetInnerHTML={{ __html: t.experience.title }}
             />
           </Reveal>

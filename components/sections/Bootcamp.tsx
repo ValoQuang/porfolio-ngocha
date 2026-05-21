@@ -31,7 +31,7 @@ export function Bootcamp() {
           </Reveal>
           <Reveal className="md:col-span-8">
             <h2
-              className="font-display text-[clamp(2rem,4.5vw,3.4rem)] leading-[1.05] text-ink [&_em]:not-italic [&_em]:font-light [&_em]:italic [&_em]:text-rose-deep"
+              className="font-display text-[clamp(2.4rem,5.5vw,4.5rem)] leading-[1.02] text-ink [&_em]:font-light [&_em]:italic [&_em]:text-rose-deep"
               dangerouslySetInnerHTML={{ __html: t.bootcamp.title }}
             />
             <p className="mt-6 max-w-2xl text-ink-soft leading-relaxed md:text-lg">{t.bootcamp.body}</p>

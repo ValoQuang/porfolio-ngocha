@@ -16,7 +16,7 @@ export function About() {
         <div className="md:col-span-9">
           <Reveal>
             <h2
-              className="font-display text-[clamp(2rem,4.5vw,3.4rem)] leading-[1.05] text-ink"
+              className="font-display text-[clamp(2.4rem,5.5vw,4.5rem)] leading-[1.02] text-ink"
               dangerouslySetInnerHTML={{ __html: t.about.title }}
             />
           </Reveal>
